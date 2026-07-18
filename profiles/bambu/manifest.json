@@ -1,0 +1,262 @@
+[
+  {
+    "file": "Pika_X1C_0.2mm_Sample.3mf",
+    "printer": "Bambu Lab X1 Carbon",
+    "nozzle": "0.2",
+    "process": "0.10mm Standard @BBL X1C 0.2 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1C_0.4mm_Sample.3mf",
+    "printer": "Bambu Lab X1 Carbon",
+    "nozzle": "0.4",
+    "process": "0.20mm Standard @BBL X1C",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1C_0.6mm_Sample.3mf",
+    "printer": "Bambu Lab X1 Carbon",
+    "nozzle": "0.6",
+    "process": "0.30mm Standard @BBL X1C 0.6 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "45",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1C_0.8mm_Sample.3mf",
+    "printer": "Bambu Lab X1 Carbon",
+    "nozzle": "0.8",
+    "process": "0.40mm Standard @BBL X1C 0.8 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "65",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1_0.2mm_Sample.3mf",
+    "printer": "Bambu Lab X1",
+    "nozzle": "0.2",
+    "process": "0.10mm Standard @BBL X1C 0.2 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1_0.4mm_Sample.3mf",
+    "printer": "Bambu Lab X1",
+    "nozzle": "0.4",
+    "process": "0.20mm Standard @BBL X1C",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1_0.6mm_Sample.3mf",
+    "printer": "Bambu Lab X1",
+    "nozzle": "0.6",
+    "process": "0.30mm Standard @BBL X1 0.6 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "45",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1_0.8mm_Sample.3mf",
+    "printer": "Bambu Lab X1",
+    "nozzle": "0.8",
+    "process": "0.40mm Standard @BBL X1 0.8 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "65",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1E_0.2mm_Sample.3mf",
+    "printer": "Bambu Lab X1E",
+    "nozzle": "0.2",
+    "process": "0.10mm Standard @BBL X1C 0.2 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1E_0.4mm_Sample.3mf",
+    "printer": "Bambu Lab X1E",
+    "nozzle": "0.4",
+    "process": "0.20mm Standard @BBL X1C",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1E_0.6mm_Sample.3mf",
+    "printer": "Bambu Lab X1E",
+    "nozzle": "0.6",
+    "process": "0.30mm Standard @BBL X1C 0.6 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "45",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_X1E_0.8mm_Sample.3mf",
+    "printer": "Bambu Lab X1E",
+    "nozzle": "0.8",
+    "process": "0.40mm Standard @BBL X1C 0.8 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "65",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1S_0.2mm_Sample.3mf",
+    "printer": "Bambu Lab P1S",
+    "nozzle": "0.2",
+    "process": "0.10mm Standard @BBL X1C 0.2 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1S_0.4mm_Sample.3mf",
+    "printer": "Bambu Lab P1S",
+    "nozzle": "0.4",
+    "process": "0.20mm Standard @BBL X1C",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1S_0.6mm_Sample.3mf",
+    "printer": "Bambu Lab P1S",
+    "nozzle": "0.6",
+    "process": "0.30mm Standard @BBL X1C 0.6 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "45",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1S_0.8mm_Sample.3mf",
+    "printer": "Bambu Lab P1S",
+    "nozzle": "0.8",
+    "process": "0.40mm Standard @BBL X1C 0.8 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "65",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1P_0.2mm_Sample.3mf",
+    "printer": "Bambu Lab P1P",
+    "nozzle": "0.2",
+    "process": "0.10mm Standard @BBL P1P 0.2 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1P_0.4mm_Sample.3mf",
+    "printer": "Bambu Lab P1P",
+    "nozzle": "0.4",
+    "process": "0.20mm Standard @BBL P1P",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "30",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1P_0.6mm_Sample.3mf",
+    "printer": "Bambu Lab P1P",
+    "nozzle": "0.6",
+    "process": "0.30mm Standard @BBL P1P 0.6 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "45",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  },
+  {
+    "file": "Pika_P1P_0.8mm_Sample.3mf",
+    "printer": "Bambu Lab P1P",
+    "nozzle": "0.8",
+    "process": "0.40mm Standard @BBL P1P 0.8 nozzle",
+    "filament": "Generic PLA",
+    "flow_cap_mm3s": "65",
+    "overrides": [
+      "infill_combination;internal_solid_infill_line_width;skeleton_infill_line_width;skin_infill_line_width;sparse_infill_line_width",
+      "filament_max_volumetric_speed",
+      ""
+    ]
+  }
+]

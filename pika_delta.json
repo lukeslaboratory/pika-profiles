@@ -1,0 +1,26 @@
+{
+  "name": "Pika hotend profile delta",
+  "comment": "Single source of truth for Pika-vs-stock slicer settings. Line widths are multiples of nozzle diameter. Flow caps are per-material, per-nozzle mm3/s ceilings (filament_max_volumetric_speed). Materials not listed (TPU, PC, ...) are intentionally left untouched.",
+  "infill_combination": "1",
+  "line_width_rules": {
+    "default": {
+      "internal_solid_infill_line_width": 1.4,
+      "sparse_infill_line_width": 1.8,
+      "skin_infill_line_width": 1.8,
+      "skeleton_infill_line_width": 1.8
+    },
+    "0.2": {
+      "internal_solid_infill_line_width": 1.2,
+      "sparse_infill_line_width": 1.2,
+      "skin_infill_line_width": 1.2,
+      "skeleton_infill_line_width": 1.2
+    }
+  },
+  "flow_caps_mm3s": {
+    "PLA":  { "0.2": 30, "0.4": 30, "0.6": 45, "0.8": 65 },
+    "PETG": { "0.2": 33, "0.4": 33, "0.6": 50, "0.8": 70 },
+    "ABS":  { "0.2": 35, "0.4": 35, "0.6": 55, "0.8": 75 },
+    "ASA":  { "0.2": 35, "0.4": 35, "0.6": 55, "0.8": 75 }
+  },
+  "flow_cap_policy": "set to cap for the material/nozzle; never lower a user value that is already higher"
+}
