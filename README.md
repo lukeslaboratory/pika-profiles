@@ -7,12 +7,12 @@ and the Pika-tuned printer/process/filament settings come with it.
 
 ## Supported machines
 
-X1 Carbon, X1, X1E, P1S, P1P — each with 0.2 / 0.4 / 0.6 / 0.8 mm nozzles
+X1 Carbon, X1, X1E, P1S, P1P, each with 0.2 / 0.4 / 0.6 / 0.8 mm nozzles
 (20 combinations, Generic PLA). See `profiles/bambu/manifest.json`.
 
 ## What the Pika tune changes vs stock
 
-Everything else — including the machine profile — is bone stock. The Pika is
+Everything else, including the machine profile, is bone stock. The Pika is
 a drop-in: no printer-profile changes at all.
 
 | Setting | Rule | 0.2 | 0.4 | 0.6 | 0.8 |
@@ -30,7 +30,7 @@ Flow ceilings (`filament_max_volumetric_speed`, mm³/s) by material and nozzle:
 | ABS / ASA | 35 | 35 | 55 | 75 |
 
 TPU and PC are intentionally left untouched. The 0.2 mm nozzle is
-pressure-limited, not melt-limited — the caps are academic there.
+pressure-limited, not melt-limited, so the caps are academic there.
 
 The whole recipe lives in [`pika_delta.json`](pika_delta.json); everything
 else in this repo is machinery that applies it.
@@ -39,7 +39,7 @@ else in this repo is machinery that applies it.
 
 Have your own dialed-in project? Apply the Pika tune to it without losing
 your settings (existing higher flow ceilings are never lowered). The recipe
-is split into modules — `flow`, `sparse_infill`, `solid_infill`, `combine`
+is split into modules: `flow`, `sparse_infill`, `solid_infill`, `combine`
 (see `modules` in `pika_delta.json`). `flow` is the point of the Pika and
 always applies; the rest can be skipped individually:
 
