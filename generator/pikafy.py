@@ -20,6 +20,7 @@ CONFIG = "Metadata/project_settings.config"
 
 NOZZLE_BUCKETS = ["0.2", "0.4", "0.6", "0.8"]
 KEY_TO_MODULE = {k: m for m, spec in DELTA["modules"].items() for k in spec["keys"]}
+REQUIRED = {m for m, spec in DELTA["modules"].items() if spec.get("required")}
 
 
 def fmt(x: float) -> str:
@@ -34,6 +35,7 @@ def bucket(nozzle: float) -> str:
 
 def apply_delta(cfg: dict, skip: set = frozenset()) -> list:
     """Patch cfg in place (modules in `skip` excluded); return a change log."""
+    skip = set(skip) - REQUIRED  # required modules always apply
     nozzle = float(cfg["nozzle_diameter"][0])
     buck = bucket(nozzle)
     rules = DELTA["line_width_rules"]["0.2"] if nozzle < 0.3 else DELTA["line_width_rules"]["default"]
@@ -104,6 +106,8 @@ def main() -> None:
     unknown = skip - set(DELTA["modules"])
     if unknown:
         ap.error(f"unknown module(s): {','.join(sorted(unknown))}")
+    if skip & REQUIRED:
+        ap.error(f"cannot skip required module(s): {','.join(sorted(skip & REQUIRED))}")
     pikafy(args.src, args.dst, skip)
 
 

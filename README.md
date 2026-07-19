@@ -40,7 +40,8 @@ else in this repo is machinery that applies it.
 Have your own dialed-in project? Apply the Pika tune to it without losing
 your settings (existing higher flow ceilings are never lowered). The recipe
 is split into modules — `flow`, `sparse_infill`, `solid_infill`, `combine`
-(see `modules` in `pika_delta.json`) — which can be skipped individually:
+(see `modules` in `pika_delta.json`). `flow` is the point of the Pika and
+always applies; the rest can be skipped individually:
 
 ```bash
 python generator/pikafy.py MyProject.3mf MyProject_Pika.3mf

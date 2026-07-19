@@ -26,6 +26,7 @@
   "modules": {
     "flow": {
       "label": "Unlock Pika flow",
+      "required": true,
       "keys": ["filament_max_volumetric_speed"],
       "description": "Raise each filament's volumetric speed ceiling to the Pika cap for your nozzle and material"
     },
