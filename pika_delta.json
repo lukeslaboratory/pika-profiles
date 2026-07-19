@@ -22,5 +22,27 @@
     "ABS":  { "0.2": 35, "0.4": 35, "0.6": 55, "0.8": 75 },
     "ASA":  { "0.2": 35, "0.4": 35, "0.6": 55, "0.8": 75 }
   },
-  "flow_cap_policy": "set to cap for the material/nozzle; never lower a user value that is already higher"
+  "flow_cap_policy": "set to cap for the material/nozzle; never lower a user value that is already higher",
+  "modules": {
+    "flow": {
+      "label": "Unlock Pika flow",
+      "keys": ["filament_max_volumetric_speed"],
+      "description": "Raise each filament's volumetric speed ceiling to the Pika cap for your nozzle and material"
+    },
+    "sparse_infill": {
+      "label": "High-flow sparse infill",
+      "keys": ["sparse_infill_line_width", "skin_infill_line_width", "skeleton_infill_line_width"],
+      "description": "Fatter sparse infill lines (1.8 x nozzle; 1.2 x at 0.2mm) so infill can actually use the flow"
+    },
+    "solid_infill": {
+      "label": "High-flow solid infill",
+      "keys": ["internal_solid_infill_line_width"],
+      "description": "Fatter internal solid infill lines (1.4 x nozzle; 1.2 x at 0.2mm)"
+    },
+    "combine": {
+      "label": "Combine infill layers",
+      "keys": ["infill_combination"],
+      "description": "Print sparse infill less often at thicker layers"
+    }
+  }
 }
