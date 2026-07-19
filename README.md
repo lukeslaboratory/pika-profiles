@@ -50,8 +50,8 @@ is split into modules: `flow`, `sparse_infill`, `solid_infill`, `combine`
 always applies; the rest can be skipped individually:
 
 ```bash
-python generator/pikafy.py MyProject.3mf MyProject_Pika.3mf
-python generator/pikafy.py --skip combine MyProject.3mf MyProject_Pika.3mf
+python generator/pikaify.py MyProject.3mf MyProject_Pika.3mf
+python generator/pikaify.py --skip combine MyProject.3mf MyProject_Pika.3mf
 ```
 
 ## Regenerating the matrix

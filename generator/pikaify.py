@@ -1,15 +1,15 @@
-"""Pika-fy a user's own Bambu Studio / Orca Slicer 3MF project.
+"""Pika-ify a user's own Bambu Studio / Orca Slicer 3MF project.
 
 Applies the Pika hotend recipe from ../pika_delta.json to the project's
 settings, scaled to the file's nozzle diameter and filament material(s),
 without touching anything else. The recipe is split into modules (see
 "modules" in pika_delta.json) that can be skipped individually. This is
-also the reference implementation for the browser converter (pikafy.html
+also the reference implementation for the browser converter (pikaify.html
 on pikahotends.com).
 
 Usage:
-    python pikafy.py MyProject.3mf MyProject_Pika.3mf
-    python pikafy.py --skip combine,solid_infill MyProject.3mf Out.3mf
+    python pikaify.py MyProject.3mf MyProject_Pika.3mf
+    python pikaify.py --skip combine,solid_infill MyProject.3mf Out.3mf
 """
 import argparse, json, zipfile
 from pathlib import Path
@@ -79,7 +79,7 @@ def apply_delta(cfg: dict, skip: set = frozenset()) -> list:
     return log
 
 
-def pikafy(src: str, dst: str, skip: set = frozenset()) -> None:
+def pikaify(src: str, dst: str, skip: set = frozenset()) -> None:
     with zipfile.ZipFile(src) as zin:
         cfg = json.loads(zin.read(CONFIG).decode("utf-8"))
         log = apply_delta(cfg, skip)
@@ -88,7 +88,7 @@ def pikafy(src: str, dst: str, skip: set = frozenset()) -> None:
                 data = json.dumps(cfg, indent=4, ensure_ascii=False) if item.filename == CONFIG \
                     else zin.read(item.filename)
                 zout.writestr(item, data)
-    print(f"pikafied {src} -> {dst}")
+    print(f"pikaified {src} -> {dst}")
     for line in log:
         print("  ", line)
     if not log:
@@ -108,7 +108,7 @@ def main() -> None:
         ap.error(f"unknown module(s): {','.join(sorted(unknown))}")
     if skip & REQUIRED:
         ap.error(f"cannot skip required module(s): {','.join(sorted(skip & REQUIRED))}")
-    pikafy(args.src, args.dst, skip)
+    pikaify(args.src, args.dst, skip)
 
 
 if __name__ == "__main__":
