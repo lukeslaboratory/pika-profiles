@@ -10,6 +10,12 @@ and the Pika-tuned printer/process/filament settings come with it.
 X1 Carbon, X1, X1E, P1S, P1P, each with 0.2 / 0.4 / 0.6 / 0.8 mm nozzles
 (20 combinations, Generic PLA). See `profiles/bambu/manifest.json`.
 
+## First install
+
+Hot-tighten a new Pika after the initial install: bring the hotend to
+printing temp and snug the FIN nozzle with the 6 mm hex before your first
+print. A nozzle tightened cold can loosen at temp and leak.
+
 ## What the Pika tune changes vs stock
 
 Everything else, including the machine profile, is bone stock. The Pika is
